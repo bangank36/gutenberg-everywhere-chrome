@@ -54,7 +54,7 @@ const config = {
 };
 
 if ( process.env.NODE_ENV === 'development' ) {
-	config.devtool = 'inline-source-map';
+	config.devtool = 'source-map';
 	config.devServer = {
 		historyApiFallback: {
 			index: '/',
