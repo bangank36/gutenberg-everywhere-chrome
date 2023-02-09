@@ -1,3 +1,23 @@
+## Changes
+- Netlify site url: https://gutenberg-for-github.netlify.app
+- Snippet for the css and js
+```
+<link rel="stylesheet" href="https://gutenberg-for-github.netlify.app/gutenberg-everywhere.css">
+<script src="https://gutenberg-for-github.netlify.app/gutenberg-everywhere.js"></script>
+```
+- Adding scripts to site
+```
+var link = document.createElement('link');
+link.setAttribute('rel', 'stylesheet');
+link.setAttribute('href', 'https://gutenberg-for-github.netlify.app/gutenberg-everywhere.css');
+document.head.appendChild(link);
+
+const script = document.createElement('script');
+script.src =
+  'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js';
+document.body.appendChild(script);
+```
+
 # Gutenberg Chrome Extension
 
 A Chrome extension that adds a button to the toolbar. When the button is clicked it will convert every `textarea` on the page to a Gutenberg editor.
